@@ -106,7 +106,7 @@
     "tslint-loader": "^2.1.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.4",
-    "webpack": "^1.13.0",
+    "webpack": "^1.13.2",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.9.1",
     "webpack-split-by-path": "0.1.0",
