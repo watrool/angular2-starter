@@ -34,3 +34,5 @@ src/**/*.js
 
 # System artifacts
 .DS_Store
+*.ngfactory.ts
+src/**/*.ngfactory.ts

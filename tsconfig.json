@@ -3,7 +3,7 @@
   "buildOnSave": false,
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es6",
+    "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": false,
@@ -12,6 +12,7 @@
     "inlineSourceMap": true,
     "noEmitHelpers": true
   },
+  "files" : [],
   "awesomeTypescriptLoaderOptions": {
     "useBabel": true,
     "useCache": false,
@@ -22,8 +23,9 @@
     "node_modules",
     "dist"
   ],
-  "types": [
+  "types":[
     "node",
-    "jasmine"
+    "jasmine",
+    "core-js"
   ]
 }
