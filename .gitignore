@@ -36,3 +36,9 @@ src/**/*.js
 .DS_Store
 *.ngfactory.ts
 src/**/*.ngfactory.ts
+
+*.metadata.json
+src/**/*.metadata.json
+
+*.css.ts
+src/**/*.css.ts
