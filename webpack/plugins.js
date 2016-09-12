@@ -48,6 +48,7 @@ const devPlugins = [
 const prodPlugins = [
   new webpack.optimize.CommonsChunkPlugin({
     name: [
+      'globals',
       'vendor',
     ],
   }),
