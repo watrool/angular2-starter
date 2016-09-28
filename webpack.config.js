@@ -6,10 +6,6 @@ const plugins = require('./webpack/plugins');
 
 module.exports = {
   entry: {
-    globals: [
-      'zone.js',
-      'reflect-metadata',
-    ],
     app: './src/index.ts',
     // and vendor files separate
     vendor: [
