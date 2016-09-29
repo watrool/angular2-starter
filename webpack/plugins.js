@@ -48,17 +48,12 @@ const devPlugins = [
 const prodPlugins = [
   new webpack.optimize.CommonsChunkPlugin({
     name: [
-      'globals',
       'vendor',
     ],
   }),
   new webpack.optimize.UglifyJsPlugin({
-    mangle: {
-      keep_fnames: true,
-    },
-    compress: {
-      warnings: false,
-    },
+    beautify: false,
+    comments: false,
   }),
 ];
 

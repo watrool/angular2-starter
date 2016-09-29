@@ -12,6 +12,7 @@ module.exports = {
       '@angular/core',
       '@angular/router',
       '@angular/platform-browser',
+      'core-js',
     ],
   },
 

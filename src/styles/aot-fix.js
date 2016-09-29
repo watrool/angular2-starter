@@ -3,7 +3,7 @@ var fs = require("fs");
 var postcss = require("postcss");
 var atImport = require("postcss-import");
 var atNext = require("postcss-cssnext");
-
+var cssnano = require("cssnano");
 // css to be processed
 var css = fs.readFileSync("./src/styles/index.css", "utf8");
 
@@ -16,6 +16,8 @@ postcss()
   })
   .then(function (result) {
     atNext.process(result).then(function(output){
-      fs.writeFileSync("./src/styles/index.aot.css", output);
-    })
+      cssnano.process(output).then(function(minified){
+        fs.writeFileSync("./src/styles/index.aot.css", minified);
+      });
+    });
   });
