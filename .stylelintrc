@@ -74,4 +74,5 @@
     "value-no-vendor-prefix": true,
     "length-zero-no-unit": true,
   },
+  "ignoreFiles": ["./src/styles/index.aot.css"]
 }
