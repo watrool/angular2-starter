@@ -17,7 +17,8 @@ postcss()
   .then(function (result) {
     atNext.process(result).then(function(output){
       cssnano.process(output).then(function(minified){
-        fs.writeFileSync("./src/styles/index.aot.css", minified);
+        const content = minified.css.replace(/\"|\'/g, '\\$&');
+        fs.writeFileSync("./src/styles/index.aot.ts", "export const styles:any[] = ['" + content +  "'];");
       });
     });
   });

@@ -46,5 +46,5 @@ src/**/*.css.ts
 *.css.shim.ts
 src/**/*.css.shim.ts
 
-*.aot.css
-src/**/*.aot.css
+*.aot.ts
+src/**/*.aot.ts
