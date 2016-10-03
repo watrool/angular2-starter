@@ -40,11 +40,5 @@ src/**/*.ngfactory.ts
 *.metadata.json
 src/**/*.metadata.json
 
-*.css.ts
-src/**/*.css.ts
-
-*.css.shim.ts
-src/**/*.css.shim.ts
-
-*.aot.ts
-src/**/*.aot.ts
+*.aot.css.ts
+src/**/*.aot.css.ts

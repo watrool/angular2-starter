@@ -1,6 +1,10 @@
+import 'ts-helpers';
+import 'reflect-metadata';
+import 'zone.js/dist/zone';
+
 import { enableProdMode } from '@angular/core';
-import { platformBrowser } from '@angular/platform-browser';
-import { AppModuleNgFactory } from './app/app.ngfactory';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
 
 declare const __PRODUCTION__: boolean;
 declare const __TEST__: boolean;
@@ -12,5 +16,5 @@ if (__PRODUCTION__) {
 }
 
 if (!__TEST__) {
-  platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
+  platformBrowserDynamic().bootstrapModule(AppModule);
 }

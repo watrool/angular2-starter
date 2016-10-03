@@ -17,7 +17,7 @@
     "useBabel": true,
     "useCache": false,
     "emitRequireType": false,
-    "useWebpackText": true
+    "useWebpackText": true 
   },
   "exclude": [
     "node_modules",

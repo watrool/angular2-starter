@@ -6,15 +6,12 @@ const plugins = require('./webpack/plugins');
 
 module.exports = {
   entry: {
-    app: './src/index.ts',
+    app: './src/main.ts',
     // and vendor files separate
     vendor: [
       '@angular/core',
       '@angular/router',
       '@angular/platform-browser',
-      'reflect-metadata',
-      'zone.js',
-      'ts-helpers',
     ],
   },
 
@@ -46,6 +43,7 @@ module.exports = {
       loaders.angular,
       loaders.tslint,
       loaders.ts,
+      loaders.angular2_template,
       loaders.html,
       loaders.css,
       loaders.svg,

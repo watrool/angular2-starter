@@ -26,6 +26,12 @@ exports.ts = {
   exclude: /node_modules/,
 };
 
+exports.angular2_template = {
+  test: /\.ts$/,
+  loader: 'angular2-template-loader',
+  exclude: /node_modules/,
+};
+
 exports.istanbulInstrumenter = {
   enforce: 'post',
   test: /^(.(?!\.spec))*\.ts$/,
