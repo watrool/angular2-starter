@@ -42,3 +42,6 @@ src/**/*.metadata.json
 
 *.aot.css.ts
 src/**/*.aot.css.ts
+
+* AoT folder
+aot/

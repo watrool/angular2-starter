@@ -17,13 +17,14 @@
     "useBabel": true,
     "useCache": false,
     "emitRequireType": false,
-    "useWebpackText": true 
+    "useWebpackText": true
   },
   "exclude": [
     "node_modules",
     "dist"
   ],
   "angularCompilerOptions": {
+   "genDir": "./aot",
    "skipMetadataEmit" : true
  },
   "types":[
