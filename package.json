@@ -12,7 +12,8 @@
   },
   "scripts": {
     "prebuild": "npm run clean && node ./src/styles/aot-fix.js && node_modules/.bin/ngc",
-    "build": "cross-env NODE_ENV=production webpack --config webpack-aot.config.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:aot": "cross-env NODE_ENV=production webpack --config webpack-aot.config.js",
     "clean": "rimraf dist/",
     "cover": "istanbul report text text-summary",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info",
