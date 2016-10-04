@@ -4,8 +4,8 @@ const path = require('path');
 const loaders = require('./webpack/loaders');
 const plugins = require('./webpack/plugins');
 const ENV = process.env.npm_lifecycle_event;
-const AoT = ENV === 'build:aot';
-if (!AoT) {
+const JiT = ENV === 'build:jit';
+if (JiT) {
   console.log('AoT: False');
 }
 module.exports = {

@@ -11,12 +11,12 @@
     "node": ">=6"
   },
   "scripts": {
-    "prebuild": "npm run clean",
-    "prebuild:aot": "npm run clean:aot && node ./src/styles/aot-fix.js && node_modules/.bin/ngc",
-    "build": "cross-env NODE_ENV=production webpack",
-    "build:aot": "cross-env NODE_ENV=production webpack --config webpack-aot.config.js",
-    "clean": "rimraf dist/",
-    "clean:aot": "rimraf dist/ && rimraf aot/",
+    "prebuild": "npm run clean && node ./src/styles/aot-fix.js && node_modules/.bin/ngc",
+    "prebuild:jit": "npm run clean:jit",
+    "build": "cross-env NODE_ENV=production webpack --config webpack-aot.config.js",
+    "build:jit": "cross-env NODE_ENV=production webpack",
+    "clean": "rimraf dist/ && rimraf aot/",
+    "clean:jit": "rimraf dist/",
     "cover": "istanbul report text text-summary",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info",
     "lint": "npm run lint-ts && npm run lint-js && npm run lint-css",

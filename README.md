@@ -39,7 +39,7 @@ $ npm start
 This runs a production-ready express server that serves up a bundled and
 minified version of the client.
 
-Note: To enable AoT, use `npm run build:aot`.
+Note: AoT is enabled by default. To disable AoT, use `npm run build:jit`.
 
 Open `http://localhost:8080` in your browser.
 

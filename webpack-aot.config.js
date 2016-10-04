@@ -1,7 +1,7 @@
 'use strict';
 const webpackConfig = require('./webpack.config.js');
 const ENV = process.env.npm_lifecycle_event;
-const AoT = ENV === 'build:aot';
+const JiT = ENV === 'build:jit';
 webpackConfig.entry.app = './src/main.aot.ts';
 webpackConfig.entry.vendor = [
   '@angular/core',
@@ -11,7 +11,7 @@ webpackConfig.entry.vendor = [
   'zone.js',
   'ts-helpers',
 ];
-if (AoT) {
+if (!JiT) {
   console.log('AoT: True');
 }
 module.exports = webpackConfig;
