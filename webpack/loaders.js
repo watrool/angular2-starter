@@ -1,14 +1,5 @@
 'use strict';
 
-exports.angular = { // ships in ES6 format now
-  test: /\.js$/,
-  loader: 'babel-loader',
-  include: /angular/,
-  exclude: /node_modules/,
-  query: {
-    compact: false,
-  },
-};
 
 exports.tslint = {
   enforce: 'pre',
@@ -19,16 +10,7 @@ exports.tslint = {
 
 exports.ts = {
   test: /\.ts$/,
-  loaders: [
-    'awesome-typescript-loader',
-    'angular2-template-loader',
-  ],
-  exclude: /node_modules/,
-};
-
-exports.angular2_template = {
-  test: /\.ts$/,
-  loader: 'angular2-template-loader',
+  loader: '@ngtools/webpack',
   exclude: /node_modules/,
 };
 

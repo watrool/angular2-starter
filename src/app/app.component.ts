@@ -1,10 +1,8 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { aotStyles } from '../styles/index.aot.css';
+import { Component } from '@angular/core';
+
 @Component({
   selector: 'rio-app',
   templateUrl: './app.component.html',
-  // Global styles imported in the app component.
-  styles: aotStyles,
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['../styles/index.css'],
 })
 export class AppComponent { }

@@ -6,7 +6,7 @@ const plugins = require('./webpack/plugins');
 const ENV = process.env.npm_lifecycle_event;
 const JiT = ENV === 'build:jit';
 if (JiT) {
-  console.log('AoT: False');
+  console.log('AoT: false');
 }
 module.exports = {
   entry: {
@@ -44,10 +44,8 @@ module.exports = {
 
   module: {
     rules: [
-      loaders.angular,
       loaders.tslint,
       loaders.ts,
-      loaders.angular2_template,
       loaders.html,
       loaders.css,
       loaders.svg,
