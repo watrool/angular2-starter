@@ -25,7 +25,7 @@
     "lint-css": "stylelint './src/**/*.css'",
     "postinstall": "npm run build",
     "start": "cross-env NODE_ENV=production http-server ./dist",
-    "pretest": "rimraf coverage/ & npm run lint",
+    "pretest": "rimraf coverage/ & npm run lint && node ./src/styles/aot-fix.js && node_modules/.bin/ngc",
     "test": "karma start --singleRun true",
     "posttest": "npm run cover",
     "test:watch": "karma start --singleRun false"
