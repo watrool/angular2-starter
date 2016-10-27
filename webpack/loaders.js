@@ -20,7 +20,6 @@ exports.tslint = {
 exports.ts = {
   test: /\.ts$/,
   loader: '@ngtools/webpack',
-  exclude: /node_modules/,
 };
 
 exports.ts_JiT = {
@@ -29,7 +28,6 @@ exports.ts_JiT = {
     'awesome-typescript-loader',
     'angular2-template-loader',
   ],
-  exclude: /node_modules/,
 };
 
 exports.istanbulInstrumenter = {
