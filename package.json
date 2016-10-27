@@ -13,7 +13,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "prebuild:jit": "npm run clean",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack-aot.config.js",
     "build:jit": "cross-env NODE_ENV=production webpack",
     "clean": "rimraf dist/",
     "cover": "istanbul report text text-summary",

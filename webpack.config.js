@@ -44,8 +44,9 @@ module.exports = {
 
   module: {
     rules: [
+      loaders.angular,
       loaders.tslint,
-      loaders.ts,
+      loaders.ts_JiT,
       loaders.html,
       loaders.css,
       loaders.svg,

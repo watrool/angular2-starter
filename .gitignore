@@ -34,14 +34,3 @@ src/**/*.js
 
 # System artifacts
 .DS_Store
-*.ngfactory.ts
-src/**/*.ngfactory.ts
-
-*.metadata.json
-src/**/*.metadata.json
-
-*.aot.css.ts
-src/**/*.aot.css.ts
-
-* AoT folder
-aot/

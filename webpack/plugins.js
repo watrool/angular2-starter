@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const AotPlugin =  require('@ngtools/webpack').AotPlugin;
 
 const postcss = require('./postcss');
 
@@ -36,10 +35,6 @@ const basePlugins = [
   }),
   new webpack.ContextReplacementPlugin(
     /angular\/core\/(esm\/src|src)\/linker/, __dirname),
-  new AotPlugin({
-    tsConfigPath: './tsconfig.json',
-    entryModule: './src/app/app.module#AppModule',
-  }),
 ].concat(sourceMap);
 
 const devPlugins = [

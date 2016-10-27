@@ -12,6 +12,12 @@
     "sourceMap": true,
     "noEmitHelpers": true
   },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "useCache": false,
+    "emitRequireType": false,
+    "useWebpackText": true
+  },
   "exclude": [
     "node_modules",
     "dist"
