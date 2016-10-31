@@ -52,8 +52,12 @@ const prodPlugins = [
     ],
   }),
   new webpack.optimize.UglifyJsPlugin({
-    beautify: false,
-    comments: false,
+    mangle: {
+      keep_fnames: true,
+    },
+    compress: {
+      warnings: false,
+    },
   }),
 ];
 
